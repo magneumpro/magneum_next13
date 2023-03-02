@@ -1,5 +1,5 @@
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 import YouTube_Sr from "yt-search";
 import { v4 as uuidv4 } from "uuid";
 import type { NextApiRequest, NextApiResponse } from "next";

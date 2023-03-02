@@ -1,5 +1,5 @@
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 import ytsearch from "yt-search";
 
 

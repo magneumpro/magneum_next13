@@ -1,5 +1,5 @@
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 var fetch = require("isomorphic-unfetch");
 var { getDetails } = require("spotify-url-info")(fetch);
 

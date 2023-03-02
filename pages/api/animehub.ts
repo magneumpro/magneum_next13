@@ -1,5 +1,5 @@
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 const malScraper = require("mal-scraper");
 export default async function search(request: any, response: any) {
 try {

@@ -1,5 +1,5 @@
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 import FFmpeg from "fluent-ffmpeg";
 import contentDisposition from "content-disposition";
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;

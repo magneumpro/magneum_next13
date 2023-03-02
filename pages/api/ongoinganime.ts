@@ -1,6 +1,6 @@
 import axios from "axios";
-import logger from "@/log";
 import moment from "moment";
+import logger from "@/static/logger";
 import { load } from "cheerio";
 import { v4 as uuidv4 } from "uuid";
 const malScraper = require("mal-scraper");
