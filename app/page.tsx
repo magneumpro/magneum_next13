@@ -1,3 +1,10 @@
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="snap-y snap-mandatory">
+      <section className="Hero"></section>
+      <section className="About"></section>
+      <section className=""></section>
+      <section className=""></section>
+    </div>
+  );
 }
