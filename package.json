@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "devT": "next dev --turbo",
-    "start": "next start",
-    "build": "next build",
+    "prep": "yarn",
+    "dev": "next dev",
     "lint": "next lint",
-    "dev": "next dev"
+    "build": "next build",
+    "start": "next start",
+    "devT": "next dev --turbo",
+    "pfmpegdev": "nodemon pfmpeg.js",
+    "pfmpegstart": "forever pfmpeg.js",
+    "server": "yarn build && yarn start",
+    "magdev": "concurrently --kill-others \"yarn dev\" \"yarn pfmpegdev\"",
+    "magstart": "concurrently --kill-others \"yarn start\" \"yarn pfmpegstart\""
   },
   "dependencies": {
     "@types/moment": "^2.13.0",
