@@ -1,4 +1,6 @@
+import moment from "moment";
 import { v4 as uuidv4 } from "uuid";
+import malScraper from "mal-scraper"
 
 export async function GET(request: Request, response: Response) {
   return new Response("GET: Hello, Next.js!");
