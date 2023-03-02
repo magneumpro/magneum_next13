@@ -1,7 +1,7 @@
-type Props = {};
-
-const ERROR = (props: Props) => {
-  return <div>ERROR</div>;
-};
-
-export default ERROR;
+export default function Error({ error }: { error: Error; reset: () => void }) {
+  return (
+    <div>
+      <h2>{JSON.stringify(error)}</h2>
+    </div>
+  );
+}
