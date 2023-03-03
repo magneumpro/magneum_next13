@@ -29,18 +29,18 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
     });
     for (let i = 0; i < thumbnail.length; i++) {
       result.push({
-        _title: title[i],
-        _thumbnail: thumbnail[i],
-        _current: episode[i],
-        _release: release[i],
-        _webpage: webpage[i],
+        title: title[i],
+        thumbnail: thumbnail[i],
+        current: episode[i],
+        release: release[i],
+        webpage: webpage[i],
       });
     }
     var Found = [
       {
-        _status: true,
-        _uuid: uuidv4(),
-        _animes: result,
+        status: true,
+        uuid: uuidv4(),
+        animes: result,
       },
     ];
     logger.info(Found);

@@ -1,5 +1,6 @@
 import moment from "moment";
 import logger from "@/static/logger";
+import { v4 as uuidv4 } from "uuid";
 import FFmpeg from "fluent-ffmpeg";
 var fetch = require("isomorphic-unfetch");
 import contentDisposition from "content-disposition";
@@ -32,10 +33,12 @@ export default async function search(request: any, response: any) {
         .run();
     });
   } catch (error: any) {
-    console.log(error);
+    logger.error(error.message);
     return response.status(500).json({
-      status: "error",
-      message: error.mesage,
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+      message: error.message,
     });
   }
 }

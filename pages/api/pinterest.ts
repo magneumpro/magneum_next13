@@ -52,10 +52,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       return res.send(Found);
     } else {
       return res.send({
-        _status: "Failed with error code 911",
-        _message: "Parameters requirement not met.",
-        _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-        _usage: {
+        status: "Failed with error code 911",
+        message: "Parameters requirement not met.",
+        date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+        usage: {
           endpoint: "/api/youtube?q=",
           example: ["/api/anime?q=death note"],
         },
