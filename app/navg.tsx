@@ -6,10 +6,6 @@ import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import { SocialIcon } from "react-social-icons";
 
-const inter = Inter({
-variable: "--inter-font",
-});
-
 
 const NAVG = (props: Props) => {
 return (
