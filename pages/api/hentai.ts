@@ -36,379 +36,379 @@ export default async function animation(
     switch (req.query.q) {
       case "ass":
         var __ass = ls_ass[Math.floor(Math.random() * ls_ass.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "I know you like anime ass~ uwu",
-            _query: req.query.q,
-            _url: __ass,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "I know you like anime ass~ uwu",
+            query: req.query.q,
+            url: __ass,
+          },
+        });
         break;
       case "bdsm":
         var __bdsm = ls_bdsm[Math.floor(Math.random() * ls_bdsm.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "If you don't know what it is, search it up",
-            _query: req.query.q,
-            _url: __bdsm,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "If you don't know what it is, search it up",
+            query: req.query.q,
+            url: __bdsm,
+          },
+        });
         break;
       case "blowjob":
         var __blowjob =
           ls_blowjob[Math.floor(Math.random() * ls_blowjob.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description:
-              "Basically an image of a girl sucking on a sharp blade!",
-            _query: req.query.q,
-            _url: __blowjob,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description:
+              "Basically an image of a girl sucking on a sharp blade!",
+            query: req.query.q,
+            url: __blowjob,
+          },
+        });
         break;
       case "cum":
         var __cum = ls_cum[Math.floor(Math.random() * ls_cum.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description:
-              "Basically sticky white stuff that is usually milked from sharpies.",
-            _query: req.query.q,
-            _url: __cum,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description:
+              "Basically sticky white stuff that is usually milked from sharpies.",
+            query: req.query.q,
+            url: __cum,
+          },
+        });
         break;
       case "doujin":
         var __doujin = ls_doujin[Math.floor(Math.random() * ls_doujin.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Sends a random doujin page imageURL!",
-            _query: req.query.q,
-            _url: __doujin,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Sends a random doujin page imageURL!",
+            query: req.query.q,
+            url: __doujin,
+          },
+        });
         break;
       case "feet":
         var __feet = ls_feet[Math.floor(Math.random() * ls_feet.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "So you like smelly feet huh?",
-            _query: req.query.q,
-            _url: __feet,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "So you like smelly feet huh?",
+            query: req.query.q,
+            url: __feet,
+          },
+        });
         break;
       case "femdom":
         var __femdom = ls_femdom[Math.floor(Math.random() * ls_femdom.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Female Domination over you",
-            _query: req.query.q,
-            _url: __femdom,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Female Domination over you",
+            query: req.query.q,
+            url: __femdom,
+          },
+        });
         break;
       case "foxgirl":
         var __foxgirl =
           ls_foxgirl[Math.floor(Math.random() * ls_foxgirl.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Girl's that are wannabe foxes, yes",
-            _query: req.query.q,
-            _url: __foxgirl,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Girl's that are wannabe foxes, yes",
+            query: req.query.q,
+            url: __foxgirl,
+          },
+        });
         break;
       case "netorare":
         var __netorare =
           ls_netorare[Math.floor(Math.random() * ls_netorare.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Wow, I won't even question your fetishes.",
-            _query: req.query.q,
-            _url: __netorare,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Wow, I won't even question your fetishes.",
+            query: req.query.q,
+            url: __netorare,
+          },
+        });
         break;
       case "maid":
         var __maid = ls_maid[Math.floor(Math.random() * ls_maid.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description:
-              "Maids, Maid Uniforms, etc, you know what maids are :3",
-            _query: req.query.q,
-            _url: __maid,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description:
+              "Maids, Maid Uniforms, etc, you know what maids are :3",
+            query: req.query.q,
+            url: __maid,
+          },
+        });
         break;
       case "masturbation":
         var __masturbation =
           ls_masturbation[Math.floor(Math.random() * ls_masturbation.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "The power of solo queue",
-            _query: req.query.q,
-            _url: __masturbation,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "The power of solo queue",
+            query: req.query.q,
+            url: __masturbation,
+          },
+        });
         break;
       case "orgy":
         var __orgy = ls_orgy[Math.floor(Math.random() * ls_orgy.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Group Lewd Acts",
-            _query: req.query.q,
-            _url: __orgy,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Group Lewd Acts",
+            query: req.query.q,
+            url: __orgy,
+          },
+        });
         break;
       case "panties":
         var __panties =
           ls_panties[Math.floor(Math.random() * ls_panties.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "I mean... just why? You like underwear?",
-            _query: req.query.q,
-            _url: __panties,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "I mean... just why? You like underwear?",
+            query: req.query.q,
+            url: __panties,
+          },
+        });
         break;
       case "pussy":
         var __pussy = ls_pussy[Math.floor(Math.random() * ls_pussy.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "School Uniforms!~ Yatta~!",
-            _query: req.query.q,
-            _url: __pussy,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "School Uniforms!~ Yatta~!",
+            query: req.query.q,
+            url: __pussy,
+          },
+        });
         break;
       case "school":
         var __school = ls_school[Math.floor(Math.random() * ls_school.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "School Uniforms!~ Yatta~!",
-            _query: req.query.q,
-            _url: __school,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "School Uniforms!~ Yatta~!",
+            query: req.query.q,
+            url: __school,
+          },
+        });
         break;
       case "succubus":
         var __succubus =
           ls_succubus[Math.floor(Math.random() * ls_succubus.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description:
-              "Spooky Succubus, oh I'm so scared~ Totally don't suck me~",
-            _query: req.query.q,
-            _url: __succubus,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description:
+              "Spooky Succubus, oh I'm so scared~ Totally don't suck me~",
+            query: req.query.q,
+            url: __succubus,
+          },
+        });
         break;
       case "tentacles":
         var __tentacles =
           ls_tentacles[Math.floor(Math.random() * ls_tentacles.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "I'm sorry but, why do they look like intestines?",
-            _query: req.query.q,
-            _url: __tentacles,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "I'm sorry but, why do they look like intestines?",
+            query: req.query.q,
+            url: __tentacles,
+          },
+        });
         break;
       case "thighs":
         var __thighs = ls_thighs[Math.floor(Math.random() * ls_thighs.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "The top part of your legs, very hot, isn't it?",
-            _query: req.query.q,
-            _url: __thighs,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "The top part of your legs, very hot, isn't it?",
+            query: req.query.q,
+            url: __thighs,
+          },
+        });
         break;
       case "uglyBastard":
         var __uglyBastard =
           ls_uglyBastard[Math.floor(Math.random() * ls_uglyBastard.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "The one thing most of us can all agree to hate :)",
-            _query: req.query.q,
-            _url: __uglyBastard,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "The one thing most of us can all agree to hate :)",
+            query: req.query.q,
+            url: __uglyBastard,
+          },
+        });
         break;
       case "uniform":
         var __uniform =
           ls_uniform[Math.floor(Math.random() * ls_uniform.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description:
-              "Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~",
-            _query: req.query.q,
-            _url: __uniform,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Military, Konbini, Work, Nurse Uniforms, etc!~ Sexy~",
+            query: req.query.q,
+            url: __uniform,
+          },
+        });
         break;
       case "yuri":
         var __yuri = ls_yuri[Math.floor(Math.random() * ls_yuri.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "yuri | Girls on Girls, and Girl's only!<3",
-            _query: req.query.q,
-            _url: __yuri,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Girls on Girls, and Girl's only!<3",
+            query: req.query.q,
+            url: __yuri,
+          },
+        });
         break;
       case "hentai":
         var __hentai = ls_hentai[Math.floor(Math.random() * ls_hentai.length)];
-        _Found = [
-          {
-            _status: "🎊success",
-            _uuid: uuidv4(),
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _topic: "Hentai (image)",
-            _description: "Random hentai...",
-            _query: req.query.q,
-            _url: __hentai,
+        res.status(200).json({
+          response: {
+            id: uuidv4(),
+            status: true,
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           },
-        ];
-        logger.info(_Found);
-        res.send(_Found);
+          meta: {
+            topic: "HENTAI: .png, .jpg",
+            description: "Random hentai...",
+            query: req.query.q,
+            url: __hentai,
+          },
+        });
         break;
       default:
-        res.send({
-          _status: "Failed with error code 911",
-          _message: "Parameters requirement not met.",
-          _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-          _usage: {
-            _endpoint: "/api/hentai?q=",
-            _example: "/api/hentai?q=ass",
-            _querry: [
+        res.status(500).json({
+          id: uuidv4(),
+          status: false,
+          message: "Arguments not satisfied.",
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+          usage: {
+            endpoint: "/api/hentai?q=",
+            example: "/api/hentai?q=ass",
+            querry: [
               "ass",
               "bdsm",
               "blowjob",
@@ -437,8 +437,11 @@ export default async function animation(
         break;
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

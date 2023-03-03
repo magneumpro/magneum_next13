@@ -36,491 +36,491 @@ import ls_wave from "@/db/sfw/wave.json";
 import ls_wink from "@/db/sfw/wink.json";
 import ls_yeet from "@/db/sfw/yeet.json";
 
-let _Found: any;
+let Found: any;
 export default async function test(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.query.q) {
       switch (req.query.q) {
         case "waifu":
           var __waifu = ls_waifu[Math.floor(Math.random() * ls_waifu.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: yeet",
-              _query: req.query.q,
-              _url: __waifu,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: yeet",
+              query: req.query.q,
+              url: __waifu,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "neko":
           var __neko = ls_neko[Math.floor(Math.random() * ls_neko.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: neko",
-              _query: req.query.q,
-              _url: __neko,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: neko",
+              query: req.query.q,
+              url: __neko,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "shinobu":
           var __shinobu =
             ls_shinobu[Math.floor(Math.random() * ls_shinobu.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: shinobu",
-              _query: req.query.q,
-              _url: __shinobu,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: shinobu",
+              query: req.query.q,
+              url: __shinobu,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "megumin":
           var __megumin =
             ls_megumin[Math.floor(Math.random() * ls_megumin.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: megumin",
-              _query: req.query.q,
-              _url: __megumin,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: megumin",
+              query: req.query.q,
+              url: __megumin,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "bully":
           var __bully = ls_bully[Math.floor(Math.random() * ls_bully.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: bully",
-              _query: req.query.q,
-              _url: __bully,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: bully",
+              query: req.query.q,
+              url: __bully,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "cuddle":
           var __cuddle =
             ls_cuddle[Math.floor(Math.random() * ls_cuddle.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: cuddle",
-              _query: req.query.q,
-              _url: __cuddle,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: cuddle",
+              query: req.query.q,
+              url: __cuddle,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "cry":
           var __cry = ls_cry[Math.floor(Math.random() * ls_cry.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: cry",
-              _query: req.query.q,
-              _url: __cry,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: cry",
+              query: req.query.q,
+              url: __cry,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "hug":
           var __hug = ls_hug[Math.floor(Math.random() * ls_hug.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: hug",
-              _query: req.query.q,
-              _url: __hug,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: hug",
+              query: req.query.q,
+              url: __hug,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "awoo":
           var __awoo = ls_awoo[Math.floor(Math.random() * ls_awoo.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: awoo",
-              _query: req.query.q,
-              _url: __awoo,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: awoo",
+              query: req.query.q,
+              url: __awoo,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "kiss":
           var __kiss = ls_kiss[Math.floor(Math.random() * ls_kiss.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: kiss",
-              _query: req.query.q,
-              _url: __kiss,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: kiss",
+              query: req.query.q,
+              url: __kiss,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "lick":
           var __lick = ls_lick[Math.floor(Math.random() * ls_lick.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: lick",
-              _query: req.query.q,
-              _url: __lick,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: lick",
+              query: req.query.q,
+              url: __lick,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "pat":
           var __pat = ls_pat[Math.floor(Math.random() * ls_pat.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: yeet",
-              _query: req.query.q,
-              _url: __pat,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: yeet",
+              query: req.query.q,
+              url: __pat,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "smug":
           var __smug = ls_smug[Math.floor(Math.random() * ls_smug.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: smug",
-              _query: req.query.q,
-              _url: __smug,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: smug",
+              query: req.query.q,
+              url: __smug,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "bonk":
           var __bonk = ls_bonk[Math.floor(Math.random() * ls_bonk.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: bonk",
-              _query: req.query.q,
-              _url: __bonk,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: bonk",
+              query: req.query.q,
+              url: __bonk,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "yeet":
           var __yeet = ls_yeet[Math.floor(Math.random() * ls_yeet.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: yeet",
-              _query: req.query.q,
-              _url: __yeet,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: yeet",
+              query: req.query.q,
+              url: __yeet,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "blush":
           var __blush = ls_blush[Math.floor(Math.random() * ls_blush.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: blush",
-              _query: req.query.q,
-              _url: __blush,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: blush",
+              query: req.query.q,
+              url: __blush,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "smile":
           var __smile = ls_smile[Math.floor(Math.random() * ls_smile.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: smile",
-              _query: req.query.q,
-              _url: __smile,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: smile",
+              query: req.query.q,
+              url: __smile,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "wave":
           var __wave = ls_wave[Math.floor(Math.random() * ls_wave.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: wave",
-              _query: req.query.q,
-              _url: __wave,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: wave",
+              query: req.query.q,
+              url: __wave,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "highfive":
           var __highfive =
             ls_highfive[Math.floor(Math.random() * ls_highfive.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: highfive",
-              _query: req.query.q,
-              _url: __highfive,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: highfive",
+              query: req.query.q,
+              url: __highfive,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "handhold":
           var __handhold =
             ls_handhold[Math.floor(Math.random() * ls_handhold.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: handhold",
-              _query: req.query.q,
-              _url: __handhold,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: handhold",
+              query: req.query.q,
+              url: __handhold,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "nom":
           var __nom = ls_nom[Math.floor(Math.random() * ls_nom.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: nom",
-              _query: req.query.q,
-              _url: __nom,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: nom",
+              query: req.query.q,
+              url: __nom,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "bite":
           var __bite = ls_bite[Math.floor(Math.random() * ls_bite.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: bite",
-              _query: req.query.q,
-              _url: __bite,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: bite",
+              query: req.query.q,
+              url: __bite,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "glomp":
           var __glomp = ls_glomp[Math.floor(Math.random() * ls_glomp.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: glomp",
-              _query: req.query.q,
-              _url: __glomp,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: glomp",
+              query: req.query.q,
+              url: __glomp,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "slap":
           var __slap = ls_slap[Math.floor(Math.random() * ls_slap.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: slap",
-              _query: req.query.q,
-              _url: __slap,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: slap",
+              query: req.query.q,
+              url: __slap,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "kill":
           var __kill = ls_kill[Math.floor(Math.random() * ls_kill.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: kill",
-              _query: req.query.q,
-              _url: __kill,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: kill",
+              query: req.query.q,
+              url: __kill,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "kick":
           var __kick = ls_kick[Math.floor(Math.random() * ls_kick.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: kick",
-              _query: req.query.q,
-              _url: __kick,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: kick",
+              query: req.query.q,
+              url: __kick,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "happy":
           var __happy = ls_happy[Math.floor(Math.random() * ls_happy.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: happy",
-              _query: req.query.q,
-              _url: __happy,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: happy",
+              query: req.query.q,
+              url: __happy,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "wink":
           var __wink = ls_wink[Math.floor(Math.random() * ls_wink.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: wink",
-              _query: req.query.q,
-              _url: __wink,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: wink",
+              query: req.query.q,
+              url: __wink,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "poke":
           var __poke = ls_poke[Math.floor(Math.random() * ls_poke.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: poke",
-              _query: req.query.q,
-              _url: __poke,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: poke",
+              query: req.query.q,
+              url: __poke,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "dance":
           var __dance = ls_dance[Math.floor(Math.random() * ls_dance.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: dance",
-              _query: req.query.q,
-              _url: __dance,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: dance",
+              query: req.query.q,
+              url: __dance,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         case "cringe":
           var __cringe =
             ls_cringe[Math.floor(Math.random() * ls_cringe.length)];
-          _Found = [
+          Found = [
             {
-              _status: "🎊success",
-              _uuid: uuidv4(),
-              _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-              _topic: "[ SFW IMAGES ]: cringe",
-              _query: req.query.q,
-              _url: __cringe,
+              status: true,
+              uuid: uuidv4(),
+              date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+              topic: "[ SFW IMAGES ]: cringe",
+              query: req.query.q,
+              url: __cringe,
             },
           ];
-          logger.info(_Found);
-          res.send(_Found);
+          logger.info(Found);
+          res.send(Found);
           break;
         default:
           res.send({
-            _status: "Failed with error code 911",
-            _message: "Parameters requirement not met.",
-            _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-            _usage: {
-              _endpoint: "/api/sfw?q=",
-              _example: "/api/sfw?q=waifu",
-              _querry: [
+            status: "Failed with error code 911",
+            message: "Parameters requirement not met.",
+            date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+            usage: {
+              endpoint: "/api/sfw?q=",
+              example: "/api/sfw?q=waifu",
+              querry: [
                 "waifu",
                 "neko",
                 "shinobu",
@@ -563,9 +563,9 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         _message: "Parameters requirement not met.",
         _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
         _usage: {
-          _endpoint: "/api/sfw?q=",
-          _example: "/api/sfw?q=waifu",
-          _querry: [
+          endpoint: "/api/sfw?q=",
+          example: "/api/sfw?q=waifu",
+          querry: [
             "waifu",
             "neko",
             "shinobu",
