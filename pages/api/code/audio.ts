@@ -12,7 +12,7 @@ export default async function search(request: any, resp: any) {
     let _audio = request.query.audio as string;
     resp.setHeader(
       "Content-disposition",
-      contentDisposition(`premiumdl-audio-${_title}.mp4`)
+      contentDisposition(`magneum-audio-${_title}.mp4`)
     );
     FFmpeg(_audio)
       .setFfmpegPath(FFmpegPath)

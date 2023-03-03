@@ -19,7 +19,7 @@ export default async function search(request: any, resp: any) {
       console.log(_data);
       resp.setHeader(
         "Content-disposition",
-        contentDisposition(`premiumdl-spotify_audio-${_data.preview.title}.mp3`)
+        contentDisposition(`magneum-spotify_audio-${_data.preview.title}.mp3`)
       );
       FFmpeg(_data.preview.audio)
         .setFfmpegPath(FFmpegPath)

@@ -14,7 +14,7 @@ export default async function search(request: any, resp: any) {
     console.log(request.query);
     resp.setHeader(
       "Content-disposition",
-      contentDisposition(`premiumdl-audio-${_title}.mp4`)
+      contentDisposition(`magneum-audio-${_title}.mp4`)
     );
     FFmpeg()
       .setFfmpegPath(FFmpegPath)
