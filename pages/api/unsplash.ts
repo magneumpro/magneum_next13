@@ -30,7 +30,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         });
       } else
         return res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -38,32 +38,32 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           meta: {
             topic: "Unsplash HD Wallpapers",
             query: req.query.q,
-            created_at: cobra.response.results[0].created_at,
-            updated_at: cobra.response.results[0].updated_at,
-            promoted_at: cobra.response.results[0].promoted_at,
-            width: cobra.response.results[0].width,
-            height: cobra.response.results[0].height,
-            color: cobra.response.results[0].color,
-            blur_hash: cobra.response.results[0].blur_hash,
-            description: cobra.response.results[0].description,
-            alt_description: cobra.response.results[0].alt_description,
+            created_at: cobra.resp.results[0].created_at,
+            updated_at: cobra.resp.results[0].updated_at,
+            promoted_at: cobra.resp.results[0].promoted_at,
+            width: cobra.resp.results[0].width,
+            height: cobra.resp.results[0].height,
+            color: cobra.resp.results[0].color,
+            blur_hash: cobra.resp.results[0].blur_hash,
+            description: cobra.resp.results[0].description,
+            alt_description: cobra.resp.results[0].alt_description,
             images: [
               {
-                raw: cobra.response.results[0].urls.raw,
-                full: cobra.response.results[0].urls.full,
-                regular: cobra.response.results[0].urls.regular,
-                small: cobra.response.results[0].urls.small,
-                thumb: cobra.response.results[0].urls.thumb,
-                small_s3: cobra.response.results[0].urls.small_s3,
+                raw: cobra.resp.results[0].urls.raw,
+                full: cobra.resp.results[0].urls.full,
+                regular: cobra.resp.results[0].urls.regular,
+                small: cobra.resp.results[0].urls.small,
+                thumb: cobra.resp.results[0].urls.thumb,
+                small_s3: cobra.resp.results[0].urls.small_s3,
               },
             ],
             links: [
               {
-                self: cobra.response.results[0].links.self,
-                html: cobra.response.results[0].links.html,
-                download: cobra.response.results[0].links.download,
+                self: cobra.resp.results[0].links.self,
+                html: cobra.resp.results[0].links.html,
+                download: cobra.resp.results[0].links.download,
                 download_location:
-                  cobra.response.results[0].links.download_location,
+                  cobra.resp.results[0].links.download_location,
               },
             ],
           },

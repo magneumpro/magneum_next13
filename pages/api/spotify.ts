@@ -8,7 +8,7 @@ var { getDetails } = require("spotify-url-info")(fetch);
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
 
-export default async function search(request: any, response: any) {
+export default async function search(request: any, resp: any) {
   try {
     let url = request.query.url as string;
     getDetails(url, {
@@ -17,7 +17,7 @@ export default async function search(request: any, response: any) {
       },
     }).then((_data: any) => {
       console.log(_data);
-      response.setHeader(
+      resp.setHeader(
         "Content-disposition",
         contentDisposition(`premiumdl-spotify_audio-${_data.preview.title}.mp3`)
       );
@@ -25,7 +25,7 @@ export default async function search(request: any, response: any) {
         .setFfmpegPath(FFmpegPath)
         .setFfprobePath(FFmpegProbe)
         .format("mp3")
-        .output(response, { end: true })
+        .output(resp, { end: true })
         .on("error", (error: any) => console.error("ERROR: " + error.message))
         .on("end", () =>
           console.log("INFO: stream sent to client successfully.")
@@ -34,7 +34,7 @@ export default async function search(request: any, response: any) {
     });
   } catch (error: any) {
     logger.error(error.message);
-    return response.status(500).json({
+    return resp.status(500).json({
       id: uuidv4(),
       status: false,
       timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

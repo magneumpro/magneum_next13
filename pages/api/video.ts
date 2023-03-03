@@ -6,13 +6,13 @@ import contentDisposition from "content-disposition";
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
 
-export default async function search(request: any, response: any) {
+export default async function search(request: any, resp: any) {
   try {
     let _title = request.query.title as string;
     let _audio = request.query.audio as string;
     let _video = request.query.video as string;
     console.log(request.query);
-    response.setHeader(
+    resp.setHeader(
       "Content-disposition",
       contentDisposition(`premiumdl-audio-${_title}.mp4`)
     );
@@ -28,11 +28,11 @@ export default async function search(request: any, response: any) {
       .outputOptions(["-movflags", "frag_keyframe + empty_moov"])
       .on("error", (e) => console.error("ERROR: " + e.message))
       .on("end", () => console.log("INFO: stream sent to client successfully."))
-      .output(response, { end: true })
+      .output(resp, { end: true })
       .run();
   } catch (error: any) {
     logger.error(error.message);
-    return response.status(500).json({
+    return resp.status(500).json({
       id: uuidv4(),
       status: false,
       timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

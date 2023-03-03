@@ -35,7 +35,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
     if (req.query.q) {
       const cobra = await Wallpaper_Flare(req.query.q);
       return res.status(200).json({
-        response: {
+        resp: {
           id: uuidv4(),
           status: true,
           timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

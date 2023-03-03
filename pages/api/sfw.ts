@@ -44,7 +44,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "waifu":
           var __waifu = ls_waifu[Math.floor(Math.random() * ls_waifu.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -59,7 +59,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "neko":
           var __neko = ls_neko[Math.floor(Math.random() * ls_neko.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -75,7 +75,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __shinobu =
             ls_shinobu[Math.floor(Math.random() * ls_shinobu.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -91,7 +91,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __megumin =
             ls_megumin[Math.floor(Math.random() * ls_megumin.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -106,7 +106,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "bully":
           var __bully = ls_bully[Math.floor(Math.random() * ls_bully.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -122,7 +122,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __cuddle =
             ls_cuddle[Math.floor(Math.random() * ls_cuddle.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -137,7 +137,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "cry":
           var __cry = ls_cry[Math.floor(Math.random() * ls_cry.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -152,7 +152,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "hug":
           var __hug = ls_hug[Math.floor(Math.random() * ls_hug.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -167,7 +167,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "awoo":
           var __awoo = ls_awoo[Math.floor(Math.random() * ls_awoo.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -182,7 +182,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "kiss":
           var __kiss = ls_kiss[Math.floor(Math.random() * ls_kiss.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -197,7 +197,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "lick":
           var __lick = ls_lick[Math.floor(Math.random() * ls_lick.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -212,7 +212,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "pat":
           var __pat = ls_pat[Math.floor(Math.random() * ls_pat.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -227,7 +227,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "smug":
           var __smug = ls_smug[Math.floor(Math.random() * ls_smug.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -242,7 +242,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "bonk":
           var __bonk = ls_bonk[Math.floor(Math.random() * ls_bonk.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -257,7 +257,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "yeet":
           var __yeet = ls_yeet[Math.floor(Math.random() * ls_yeet.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -272,7 +272,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "blush":
           var __blush = ls_blush[Math.floor(Math.random() * ls_blush.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -287,7 +287,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "smile":
           var __smile = ls_smile[Math.floor(Math.random() * ls_smile.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -302,7 +302,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "wave":
           var __wave = ls_wave[Math.floor(Math.random() * ls_wave.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -318,7 +318,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __highfive =
             ls_highfive[Math.floor(Math.random() * ls_highfive.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -334,7 +334,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __handhold =
             ls_handhold[Math.floor(Math.random() * ls_handhold.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -349,7 +349,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "nom":
           var __nom = ls_nom[Math.floor(Math.random() * ls_nom.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -364,7 +364,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "bite":
           var __bite = ls_bite[Math.floor(Math.random() * ls_bite.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -379,7 +379,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "glomp":
           var __glomp = ls_glomp[Math.floor(Math.random() * ls_glomp.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -394,7 +394,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "slap":
           var __slap = ls_slap[Math.floor(Math.random() * ls_slap.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -409,7 +409,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "kill":
           var __kill = ls_kill[Math.floor(Math.random() * ls_kill.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -424,7 +424,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "kick":
           var __kick = ls_kick[Math.floor(Math.random() * ls_kick.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -439,7 +439,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "happy":
           var __happy = ls_happy[Math.floor(Math.random() * ls_happy.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -454,7 +454,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "wink":
           var __wink = ls_wink[Math.floor(Math.random() * ls_wink.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -469,7 +469,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "poke":
           var __poke = ls_poke[Math.floor(Math.random() * ls_poke.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -484,7 +484,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         case "dance":
           var __dance = ls_dance[Math.floor(Math.random() * ls_dance.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -500,7 +500,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           var __cringe =
             ls_cringe[Math.floor(Math.random() * ls_cringe.length)];
           res.status(200).json({
-            response: {
+            resp: {
               id: uuidv4(),
               status: true,
               timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

@@ -13,7 +13,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         host: "https://translate.google.com",
       });
       return res.status(200).json({
-        response: {
+        resp: {
           id: uuidv4(),
           status: true,
           timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

@@ -41,7 +41,7 @@ export default async function animation(
       case "dance":
         var __dance = ls_dance[Math.floor(Math.random() * ls_dance.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -56,7 +56,7 @@ export default async function animation(
       case "cuddle":
         var __cuddle = ls_cuddle[Math.floor(Math.random() * ls_cuddle.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -71,7 +71,7 @@ export default async function animation(
       case "bite":
         var __bite = ls_bite[Math.floor(Math.random() * ls_bite.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -86,7 +86,7 @@ export default async function animation(
       case "slap":
         var __slap = ls_slap[Math.floor(Math.random() * ls_slap.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -101,7 +101,7 @@ export default async function animation(
       case "wink":
         var __wink = ls_wink[Math.floor(Math.random() * ls_wink.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -116,7 +116,7 @@ export default async function animation(
       case "bonk":
         var __bonk = ls_bonk[Math.floor(Math.random() * ls_bonk.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -131,7 +131,7 @@ export default async function animation(
       case "hug":
         var __hug = ls_hug[Math.floor(Math.random() * ls_hug.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -146,7 +146,7 @@ export default async function animation(
       case "kiss":
         var __kiss = ls_kiss[Math.floor(Math.random() * ls_kiss.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -161,7 +161,7 @@ export default async function animation(
       case "pat":
         var __pat = ls_pat[Math.floor(Math.random() * ls_pat.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -176,7 +176,7 @@ export default async function animation(
       case "happy":
         var __happy = ls_happy[Math.floor(Math.random() * ls_happy.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -191,7 +191,7 @@ export default async function animation(
       case "kill":
         var __kill = ls_kill[Math.floor(Math.random() * ls_kill.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -207,7 +207,7 @@ export default async function animation(
         var __highfive =
           ls_highfive[Math.floor(Math.random() * ls_highfive.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -222,7 +222,7 @@ export default async function animation(
       case "wave":
         var __wave = ls_wave[Math.floor(Math.random() * ls_wave.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -237,7 +237,7 @@ export default async function animation(
       case "cry":
         var __cry = ls_cry[Math.floor(Math.random() * ls_cry.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -252,7 +252,7 @@ export default async function animation(
       case "smile":
         var __smile = ls_smile[Math.floor(Math.random() * ls_smile.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -267,7 +267,7 @@ export default async function animation(
       case "punch":
         var __punch = ls_punch[Math.floor(Math.random() * ls_punch.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -282,7 +282,7 @@ export default async function animation(
       case "kick":
         var __kick = ls_kick[Math.floor(Math.random() * ls_kick.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -298,7 +298,7 @@ export default async function animation(
         var __confused =
           ls_confused[Math.floor(Math.random() * ls_confused.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -313,7 +313,7 @@ export default async function animation(
       case "sad":
         var __sad = ls_sad[Math.floor(Math.random() * ls_sad.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -329,7 +329,7 @@ export default async function animation(
         var __thinking =
           ls_thinking[Math.floor(Math.random() * ls_thinking.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -344,7 +344,7 @@ export default async function animation(
       case "yeet":
         var __yeet = ls_yeet[Math.floor(Math.random() * ls_yeet.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -359,7 +359,7 @@ export default async function animation(
       case "stare":
         var __stare = ls_stare[Math.floor(Math.random() * ls_stare.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -374,7 +374,7 @@ export default async function animation(
       case "bored":
         var __bored = ls_bored[Math.floor(Math.random() * ls_bored.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -389,7 +389,7 @@ export default async function animation(
       case "scream":
         var __scream = ls_scream[Math.floor(Math.random() * ls_scream.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -405,7 +405,7 @@ export default async function animation(
         var __nervous =
           ls_nervous[Math.floor(Math.random() * ls_nervous.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -420,7 +420,7 @@ export default async function animation(
       case "yes":
         var __yes = ls_yes[Math.floor(Math.random() * ls_yes.length)];
         res.status(200).json({
-          response: {
+          resp: {
             id: uuidv4(),
             status: true,
             timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),

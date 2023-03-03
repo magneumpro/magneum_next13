@@ -13,7 +13,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       let Found;
       let Query: any = await YouTube_Sr(q);
       let QueryFound: any = Query.videos.slice(0, 1);
-      QueryFound.forEach(function (response: any) {
+      QueryFound.forEach(function (resp: any) {
         Found = {
           status: true,
           uuid: uuidv4(),
@@ -22,18 +22,18 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           query: q,
           youtube_search: [
             {
-              YT_ID: response.videoId,
-              TITLE: response.title,
-              UPLOADED: response.ago,
-              VIEWS: response.views,
-              DURATION_FULL: response.duration.timestamp,
-              DURATION_SECONDS: response.duration.seconds,
-              AUTHOR_NAME: response.author.name,
-              AUTHOR_CHANNEL: response.author.url,
-              LINK: response.url,
-              THUMB: response.thumbnail,
-              HQ_IMAGE: response.image,
-              DESCRIPTION: response.description,
+              YT_ID: resp.videoId,
+              TITLE: resp.title,
+              UPLOADED: resp.ago,
+              VIEWS: resp.views,
+              DURATION_FULL: resp.duration.timestamp,
+              DURATION_SECONDS: resp.duration.seconds,
+              AUTHOR_NAME: resp.author.name,
+              AUTHOR_CHANNEL: resp.author.url,
+              LINK: resp.url,
+              THUMB: resp.thumbnail,
+              HQ_IMAGE: resp.image,
+              DESCRIPTION: resp.description,
             },
           ],
         };
