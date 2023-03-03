@@ -1,6 +1,6 @@
 {
   "name": "magneum_next13",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "prep": "yarn",
@@ -12,6 +12,7 @@
     "pfmpegdev": "nodemon pfmpeg.js",
     "pfmpegstart": "forever pfmpeg.js",
     "server": "yarn build && yarn start",
+    "clean": "rm -rf node_modules .next .vscode all.log error.log",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn pfmpegdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn pfmpegstart\""
   },
