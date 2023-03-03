@@ -38,29 +38,29 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.query.q) {
       const cobra = await Pinterest(req.query.q);
-      var Found = [
-        {
+      return res.status(200).json({
+        response: {
+          id: uuidv4(),
           status: true,
-          uuid: uuidv4(),
-          date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
-          topic: "Pinterest Searcher",
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+        },
+        meta: {
+          topic: "PINTEREST: image",
           query: req.query.q,
           links: cobra,
         },
-      ];
-      logger.info(Found);
-      return res.send(Found);
-    } else {
-      return res.send({
-        status: "Failed with error code 911",
-        message: "Parameters requirement not met.",
-        date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+      });
+    } else
+      return res.status(500).json({
+        id: uuidv4(),
+        status: false,
+        message: "Arguments not satisfied.",
+        timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
         usage: {
-          endpoint: "/api/youtube?q=",
-          example: ["/api/anime?q=death note"],
+          endpoint: "/api/pinterest?q=",
+          example: "/api/pinterest?q=cat",
         },
       });
-    }
   } catch (error: any) {
     logger.error(error.message);
     return res.status(500).json({

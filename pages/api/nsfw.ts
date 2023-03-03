@@ -28,14 +28,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -45,10 +47,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -58,14 +62,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -75,10 +81,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -88,14 +96,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -105,10 +115,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -118,14 +130,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -135,10 +149,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -148,14 +164,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -165,10 +183,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -178,14 +198,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -195,10 +217,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -208,14 +232,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -225,10 +251,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -238,14 +266,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -255,10 +285,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -268,14 +300,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -285,10 +319,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -298,14 +334,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -315,10 +353,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -328,14 +368,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -345,10 +387,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -358,14 +402,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -375,10 +421,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -389,12 +437,16 @@ export default async function animation(
           var FF = JSON.parse(Form.body);
           var FFLink = FF[0].data.children[0].data.url;
           if (FFLink) {
-            var Found = [
-              {
+            return res.status(200).json({
+              response: {
+                id: uuidv4(),
                 status: true,
-                date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+              },
+              meta: {
+                topic: "[NSFW Images]",
                 query: req.query.q,
-                url: await shorten(FFLink),
+                url: shorten(FFLink),
                 domain: FF[0].data.children[0].data.domain,
                 sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                 title: FF[0].data.children[0].data.title,
@@ -404,10 +456,12 @@ export default async function animation(
                   "https://www.reddit.com" +
                   FF[0].data.children[0].data.permalink,
               },
-            ];
-            logger.info(Found);
-            return res.send(Found);
-          }
+            });
+          } else
+            return res.status(500).json({
+              status: false,
+              message: "Server time error.",
+            });
         });
         break;
       case "sexygirls":
@@ -416,14 +470,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -433,10 +489,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -446,14 +504,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -463,10 +523,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -476,14 +538,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -493,10 +557,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -506,14 +572,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -523,10 +591,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -536,14 +606,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -553,10 +625,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -566,14 +640,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -583,10 +659,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -596,14 +674,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -613,10 +693,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -626,14 +708,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -643,10 +727,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -656,14 +742,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -673,10 +761,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -686,14 +776,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -703,10 +795,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -716,14 +810,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -733,10 +829,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -747,14 +845,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -764,10 +864,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -777,14 +879,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -794,10 +898,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -807,14 +913,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -824,10 +932,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -839,14 +949,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -856,10 +968,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -869,14 +983,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -886,10 +1002,12 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
@@ -901,14 +1019,16 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var Found = [
-                {
+              return res.status(200).json({
+                response: {
+                  id: uuidv4(),
                   status: true,
-                  uuid: uuidv4(),
-                  date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+                  timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+                },
+                meta: {
                   topic: "[NSFW Images]",
                   query: req.query.q,
-                  url: await shorten(FFLink),
+                  url: shorten(FFLink),
                   domain: FF[0].data.children[0].data.domain,
                   sub_reddit_id: FF[0].data.children[0].data.subreddit_id,
                   title: FF[0].data.children[0].data.title,
@@ -918,18 +1038,21 @@ export default async function animation(
                     "https://www.reddit.com" +
                     FF[0].data.children[0].data.permalink,
                 },
-              ];
-              logger.info(Found);
-              return res.send(Found);
-            }
+              });
+            } else
+              return res.status(500).json({
+                status: false,
+                message: "Server time error.",
+              });
           }
         );
         break;
       default:
-        res.send({
-          status: "Failed with error code 911",
-          message: "Parameters requirement not met.",
-          date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+        res.status(500).json({
+          id: uuidv4(),
+          status: false,
+          message: "Arguments not satisfied.",
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           usage: {
             endpoint: "/api/nsfw?q=",
             example: "/api/nsfw?q=ass",
@@ -970,6 +1093,7 @@ export default async function animation(
               "cum",
               "slut",
               "cumslut",
+              "cringe",
             ],
           },
         });

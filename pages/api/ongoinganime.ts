@@ -36,15 +36,18 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         webpage: webpage[i],
       });
     }
-    var Found = [
-      {
+
+    return res.status(200).json({
+      response: {
+        id: uuidv4(),
         status: true,
-        uuid: uuidv4(),
+        timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+      },
+      meta: {
+        topic: "ANIME: on going",
         animes: result,
       },
-    ];
-    logger.info(Found);
-    return res.send(Found);
+    });
   } catch (error: any) {
     logger.error(error.message);
     return res.status(500).json({
