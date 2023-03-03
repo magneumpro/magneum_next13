@@ -31,7 +31,7 @@ _message: "Parameters requirement not met.",
 _uuid: uuidv4(),
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/text2speech?q=",
+_endpoint: "/api/text2speech?q=",
 _example: "/api/text2speech?q=Hello. How are You?",
 },
 });

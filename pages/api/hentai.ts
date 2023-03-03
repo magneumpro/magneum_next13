@@ -406,7 +406,7 @@ export default async function animation(
           _message: "Parameters requirement not met.",
           _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
           _usage: {
-            _api_link: "/api/hentai?q=",
+            _endpoint: "/api/hentai?q=",
             _example: "/api/hentai?q=ass",
             _querry: [
               "ass",

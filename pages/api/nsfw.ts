@@ -931,7 +931,7 @@ _status: "Failed with error code 911",
 _message: "Parameters requirement not met.",
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/nsfw?q=",
+_endpoint: "/api/nsfw?q=",
 _example: "/api/nsfw?q=ass",
 _querry: [
 "nsfw",

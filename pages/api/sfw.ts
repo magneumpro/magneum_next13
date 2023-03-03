@@ -518,7 +518,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
             _message: "Parameters requirement not met.",
             _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
             _usage: {
-              _api_link: "/api/sfw?q=",
+              _endpoint: "/api/sfw?q=",
               _example: "/api/sfw?q=waifu",
               _querry: [
                 "waifu",
@@ -563,7 +563,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         _message: "Parameters requirement not met.",
         _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
         _usage: {
-          _api_link: "/api/sfw?q=",
+          _endpoint: "/api/sfw?q=",
           _example: "/api/sfw?q=waifu",
           _querry: [
             "waifu",

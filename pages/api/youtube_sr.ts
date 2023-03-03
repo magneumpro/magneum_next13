@@ -46,7 +46,7 @@ _status: "Failed with error code 911",
 _message: "Parameters requirement not met.",
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/youtube_sr?q=",
+_endpoint: "/api/youtube_sr?q=",
 _example: [
 "/api/youtube_sr?q=ncs music 5 minutes",
 "/api/youtube_sr?q=https://youtu.be/3gxus8LnMfI",

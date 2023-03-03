@@ -39,7 +39,7 @@ _message: "Parameters requirement not met.",
 _uuid: uuidv4(),
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/shorten?q=",
+_endpoint: "/api/shorten?q=",
 _example: "/api/shorten?q=https://google.com",
 },
 });
@@ -51,7 +51,7 @@ _message: "Parameters requirement not met.",
 _uuid: uuidv4(),
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/shorten?q=",
+_endpoint: "/api/shorten?q=",
 _example: "/api/shorten?q=https://google.com",
 },
 });

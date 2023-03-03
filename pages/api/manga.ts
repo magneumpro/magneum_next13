@@ -28,7 +28,7 @@ _status: "Failed with error code 911",
 _message: "Parameters requirement not met.",
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/manga?q=",
+_endpoint: "/api/manga?q=",
 _example: "/api/manga?q=My Hero Academia by Kohei Horikoshi",
 },
 });
@@ -71,7 +71,7 @@ _status: "Failed with error code 911",
 _message: "Parameters requirement not met.",
 _date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
 _usage: {
-_api_link: "/api/manga?q=",
+_endpoint: "/api/manga?q=",
 _example: "/api/manga?q=My Hero Academia by Kohei Horikoshi",
 },
 });
