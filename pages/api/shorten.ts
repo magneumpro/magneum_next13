@@ -20,42 +20,40 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.query.q) {
       if (validUrl.isUri(req.query.q)) {
-        var Found = [
-          {
+        return res.status(200).json({
+          response: {
+            id: uuidv4(),
             status: true,
-            uuid: uuidv4(),
-            date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+          },
+          meta: {
             topic: "Shorten Url",
             query: req.query.q,
-            url: await shorten(req.query.q),
+            url: shorten(req.query.q),
           },
-        ];
-        logger.info(Found);
-        return res.send(Found);
-      } else {
-        res.send({
-          status: "Failed with error code 911",
-          message: "Parameters requirement not met.",
-          uuid: uuidv4(),
-          date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+        });
+      } else
+        return res.status(500).json({
+          id: uuidv4(),
+          status: false,
+          message: "Arguments not satisfied.",
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           usage: {
             endpoint: "/api/shorten?q=",
             example: "/api/shorten?q=https://google.com",
           },
         });
-      }
-    } else {
-      return res.send({
-        status: "Failed with error code 911",
-        message: "Parameters requirement not met.",
-        uuid: uuidv4(),
-        date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+    } else
+      return res.status(500).json({
+        id: uuidv4(),
+        status: false,
+        message: "Arguments not satisfied.",
+        timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
         usage: {
           endpoint: "/api/shorten?q=",
           example: "/api/shorten?q=https://google.com",
         },
       });
-    }
   } catch (error: any) {
     logger.error(error.message);
     return res.status(500).json({

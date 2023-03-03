@@ -18,21 +18,24 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         orientation: "portrait",
       });
       if (!cobra) {
-        res.send({
-          status: "Failed with error code 911",
-          message: "Parameters requirement not met.",
-          date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+        return res.status(500).json({
+          id: uuidv4(),
+          status: false,
+          message: "Server error.",
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
           usage: {
-            endpoint: "/api/manga?q=",
-            example: "/api/manga?q=My Hero Academia by Kohei Horikoshi",
+            endpoint: "/api/unsplash?q=",
+            example: "/api/unsplash?q=cat",
           },
         });
-      } else {
-        var Found = [
-          {
+      } else
+        return res.status(200).json({
+          response: {
+            id: uuidv4(),
             status: true,
-            uuid: uuidv4(),
-            date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+            timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+          },
+          meta: {
             topic: "Unsplash HD Wallpapers",
             query: req.query.q,
             created_at: cobra.response.results[0].created_at,
@@ -64,21 +67,18 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               },
             ],
           },
-        ];
-        logger.info(Found);
-        return res.send(Found);
-      }
-    } else {
-      return res.send({
-        status: "Failed with error code 911",
-        message: "Parameters requirement not met.",
-        date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+        });
+    } else
+      return res.status(500).json({
+        id: uuidv4(),
+        status: false,
+        message: "Arguments not satisfied.",
+        timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
         usage: {
           endpoint: "/api/unsplash?q=",
           example: ["/api/unsplash?q=cat"],
         },
       });
-    }
   } catch (error: any) {
     logger.error(error.message);
     return res.status(500).json({

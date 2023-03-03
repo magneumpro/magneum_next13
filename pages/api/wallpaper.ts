@@ -34,29 +34,29 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.query.q) {
       const cobra = await Wallpaper_Flare(req.query.q);
-      var Found = [
-        {
+      return res.status(200).json({
+        response: {
+          id: uuidv4(),
           status: true,
-          uuid: uuidv4(),
-          date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+          timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
+        },
+        meta: {
           topic: "Wallpapers from Wallpaper Flare",
           query: req.query.q,
           links: cobra,
         },
-      ];
-      logger.info(Found);
-      return res.send(Found);
-    } else {
-      return res.send({
-        status: "Failed with error code 911",
-        message: "Parameters requirement not met.",
-        date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
+      });
+    } else
+      return res.status(500).json({
+        id: uuidv4(),
+        status: false,
+        message: "Arguments not satisfied.",
+        timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
         usage: {
           endpoint: "/api/wallpaper?q=",
           example: ["/api/wallpaper?q=dog"],
         },
       });
-    }
   } catch (error: any) {
     logger.error(error.message);
     return res.status(500).json({
