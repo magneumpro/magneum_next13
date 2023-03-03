@@ -1,7 +1,7 @@
 "use client";
 export default function Error({ error }: { error: Error; reset: () => void }) {
 return (
-<div className="flex h-[calc(100vh-80px)] items-center justify-center p-5 w-full bg-neutral-900">
+<div className="flex h-[calc(100vh-80px)] items-center justify-center p-5 w-full bg-[#1C1A22]">
 <div className="text-center">
 <div className="inline-flex rounded-full bg-neutral-700 p-4">
 <div className="rounded-full stroke-red-600 bg-neutral-800 p-4">

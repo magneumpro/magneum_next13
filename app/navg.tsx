@@ -13,7 +13,7 @@ variable: "--inter-font",
 
 const NAVG = (props: Props) => {
 return (
-<div className="sticky z-40 top-0 pl-8 pr-4 p-6 navbar bg-neutral-900/80 backdrop-blur-md shadow-2xl shadow-black">
+<div className="sticky z-40 top-0 pl-8 pr-4 p-6 navbar bg-[#1d1c20]/80 backdrop-blur-md shadow-2xl shadow-black">
 <motion.div
 initial={{ x: -600, opacity: 0, scale: 0.1 }}
 animate={{ x: 0, opacity: 1, scale: 1 }}
