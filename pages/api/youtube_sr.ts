@@ -10,11 +10,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
     const { q } = query;
     console.log(query);
     if (q) {
-      let _Found;
+      let Found;
       let Query: any = await YouTube_Sr(q);
       let QueryFound: any = Query.videos.slice(0, 1);
       QueryFound.forEach(function (response: any) {
-        _Found = {
+        Found = {
           status: true,
           uuid: uuidv4(),
           date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -38,8 +38,8 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           ],
         };
       });
-      logger.info(_Found);
-      return res.send(_Found);
+      logger.info(Found);
+      return res.send(Found);
     } else {
       return res.send({
         _status: "Failed with error code 911",
@@ -55,8 +55,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       });
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

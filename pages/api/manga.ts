@@ -41,7 +41,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         for (var i = 0; i < response.data[0].authors.length; i++) {
           Authors += `name=>${response.data[0].authors[i].name} | type=>${response.data[0].authors[0].type}`;
         }
-        var _Found = [
+        var Found = [
           {
             status: true,
             uuid: uuidv4(),
@@ -62,8 +62,8 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
             description: response.data[0].synopsis,
           },
         ];
-        logger.info(_Found);
-        return res.send(_Found);
+        logger.info(Found);
+        return res.send(Found);
       }
     } else {
       return res.send({
@@ -77,8 +77,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       });
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

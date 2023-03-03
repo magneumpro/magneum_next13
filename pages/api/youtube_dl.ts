@@ -189,7 +189,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       const Queryrslt: any = QueryFound;
       if (quality === "music") {
         let stream: any = await singer.stream(QueryFound[0].url);
-        const _Found = [
+        const Found = [
           {
             type: "[ AUDIO ]: highest quality",
             quick_dl: stream.url,
@@ -200,12 +200,12 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
             HQ_IMAGE: Queryrslt[0].image,
           },
         ];
-        logger.info(_Found);
-        return res.send(_Found);
+        logger.info(Found);
+        return res.send(Found);
       } else {
         const _maker: any = await YouTube_Genre(QueryFound[0].url);
         if (quality === "1080p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 1080p",
               id: _maker.id,
@@ -219,10 +219,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "720p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 720p",
               id: _maker.id,
@@ -236,10 +236,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "480p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 480p",
               id: _maker.id,
@@ -253,10 +253,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "360p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 360p",
               id: _maker.id,
@@ -270,10 +270,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "240p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 240p",
               id: _maker.id,
@@ -287,10 +287,10 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "144p") {
-          const _Found = [
+          const Found = [
             {
               type: "[ VIDEO ]: 144p",
               id: _maker.id,
@@ -304,11 +304,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else if (quality === "128kbps") {
           let stream: any = await singer.stream("https://youtu.be/RpHIdB7i0oM");
-          const _Found = [
+          const Found = [
             {
               type: "[ AUDIO ]: 128kbps",
               id: _maker.id,
@@ -322,8 +322,8 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
               HQ_IMAGE: Queryrslt[0].image,
             },
           ];
-          logger.info(_Found);
-          return res.send(_Found);
+          logger.info(Found);
+          return res.send(Found);
         } else {
           return res.send({
             _status: "Failed with error code 911",
@@ -372,8 +372,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       });
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

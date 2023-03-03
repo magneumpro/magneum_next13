@@ -602,8 +602,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       });
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

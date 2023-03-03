@@ -34,7 +34,7 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.query.q) {
       const cobra = await Wallpaper_Flare(req.query.q);
-      var _Found = [
+      var Found = [
         {
           status: true,
           uuid: uuidv4(),
@@ -44,8 +44,8 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
           links: cobra,
         },
       ];
-      logger.info(_Found);
-      return res.send(_Found);
+      logger.info(Found);
+      return res.send(Found);
     } else {
       return res.send({
         _status: "Failed with error code 911",
@@ -58,8 +58,11 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
       });
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

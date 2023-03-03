@@ -36,18 +36,21 @@ export default async function test(req: NextApiRequest, res: NextApiResponse) {
         _webpage: webpage[i],
       });
     }
-    var _Found = [
+    var Found = [
       {
         _status: true,
         _uuid: uuidv4(),
         _animes: result,
       },
     ];
-    logger.info(_Found);
-    return res.send(_Found);
+    logger.info(Found);
+    return res.send(Found);
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }

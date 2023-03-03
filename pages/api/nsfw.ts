@@ -28,7 +28,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -46,8 +46,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -58,7 +58,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -76,8 +76,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -88,7 +88,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -106,8 +106,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -118,7 +118,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -136,8 +136,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -148,7 +148,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -166,8 +166,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -178,7 +178,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -196,8 +196,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -208,7 +208,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -226,8 +226,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -238,7 +238,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -256,8 +256,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -268,7 +268,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -286,8 +286,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -298,7 +298,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -316,8 +316,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -328,7 +328,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -346,8 +346,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -358,7 +358,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -376,8 +376,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -389,7 +389,7 @@ export default async function animation(
           var FF = JSON.parse(Form.body);
           var FFLink = FF[0].data.children[0].data.url;
           if (FFLink) {
-            var _Found = [
+            var Found = [
               {
                 status: true,
                 date_create: moment().format("DD-MM-YYYY hh:mm:ss"),
@@ -405,8 +405,8 @@ export default async function animation(
                   FF[0].data.children[0].data.permalink,
               },
             ];
-            logger.info(_Found);
-            return res.send(_Found);
+            logger.info(Found);
+            return res.send(Found);
           }
         });
         break;
@@ -416,7 +416,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -434,8 +434,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -446,7 +446,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -464,8 +464,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -476,7 +476,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -494,8 +494,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -506,7 +506,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -524,8 +524,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -536,7 +536,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -554,8 +554,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -566,7 +566,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -584,8 +584,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -596,7 +596,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -614,8 +614,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -626,7 +626,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -644,8 +644,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -656,7 +656,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -674,8 +674,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -686,7 +686,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -704,8 +704,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -716,7 +716,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -734,8 +734,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -747,7 +747,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -765,8 +765,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -777,7 +777,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -795,8 +795,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -807,7 +807,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -825,8 +825,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -839,7 +839,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -857,8 +857,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -869,7 +869,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -887,8 +887,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -901,7 +901,7 @@ export default async function animation(
             var FF = JSON.parse(Form.body);
             var FFLink = FF[0].data.children[0].data.url;
             if (FFLink) {
-              var _Found = [
+              var Found = [
                 {
                   status: true,
                   uuid: uuidv4(),
@@ -919,8 +919,8 @@ export default async function animation(
                     FF[0].data.children[0].data.permalink,
                 },
               ];
-              logger.info(_Found);
-              return res.send(_Found);
+              logger.info(Found);
+              return res.send(Found);
             }
           }
         );
@@ -976,8 +976,11 @@ export default async function animation(
         break;
     }
   } catch (error: any) {
+    logger.error(error.message);
     return res.status(500).json({
-      status: "error",
+      id: uuidv4(),
+      status: false,
+      timestamp: moment().format("DD-MM-YYYY hh:mm:ss"),
       message: error.message,
     });
   }
