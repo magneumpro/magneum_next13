@@ -1,7 +1,7 @@
 import moment from "moment";
 import FFmpeg from "fluent-ffmpeg";
 import { v4 as uuidv4 } from "uuid";
-import logger from "@/static/logger";
+import logger from "@/public/static/logger";
 var fetch = require("isomorphic-unfetch");
 import contentDisposition from "content-disposition";
 var { getDetails } = require("spotify-url-info")(fetch);

@@ -1,5 +1,5 @@
 import moment from "moment";
-import logger from "@/static/logger";
+import logger from "@/public/static/logger";
 import { v4 as uuidv4 } from "uuid";
 import { createApi } from "unsplash-js";
 import type { NextApiRequest, NextApiResponse } from "next";

@@ -1,6 +1,6 @@
 import axios from "axios";
 import moment from "moment";
-import logger from "@/static/logger";
+import logger from "@/public/static/logger";
 import { v4 as uuidv4 } from "uuid";
 import { load as cLoad } from "cheerio";
 import type { NextApiRequest, NextApiResponse } from "next";
