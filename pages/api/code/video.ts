@@ -1,7 +1,7 @@
 import moment from "moment";
-import logger from "@/static/logger";
-import { v4 as uuidv4 } from "uuid";
 import FFmpeg from "fluent-ffmpeg";
+import { v4 as uuidv4 } from "uuid";
+import logger from "@/static/logger";
 import contentDisposition from "content-disposition";
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
